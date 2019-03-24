@@ -23,7 +23,7 @@ This Arduino modulates and LED using On-Off keying based on the character's ASCI
 - Point the LED to the LDR and keep them apart by about 5cm.
 
 ##### Automatic Threshold Detection
-- As the is going to be Ambient light falling on the LDR, we need to find the appropriate threshold for what ADC values (read form the LDR voltage devider throught the Arduino PIN_A0) such that when our LED is on, we should read bit 1 (after comparing the threshold with the Analog Read from PIN_A0) and when LED is off, we should read 0.
+- As there is going to be Ambient light falling on the LDR, we need to find the appropriate threshold for what ADC values (read form the LDR voltage devider throught the Arduino PIN_A0) such that when our LED is on, we should read bit 1 (after comparing the threshold with the Analog Read from PIN_A0) and when LED is off, we should read 0.
 
 - To find the appropriate threshold, we need to reset the two Arduinos simultaneously. The **vlcrx** and **vlctx** codes contain an initial synchronised and known LED On-Off cycle which helps in calibrating and finding the right threshold. 
 
