@@ -27,7 +27,7 @@ This Arduino modulates and LED using On-Off keying based on the character's ASCI
 
 - To find the appropriate threshold, we need to reset the two Arduinos simultaneously. The **vlcrx** and **vlctx** codes contain an initial synchronised and known LED On-Off cycle which helps in calibrating and finding the right threshold. 
 
-- One can manually reset the two Arduinos simultaneorsly by releasing the reset button at the same time.
+- One can manually reset the two Arduinos simultaneously by releasing the reset button at the same time.
 Another way is to connect the the reset(RST) pin of both the Arduinos together and hit reset any one of the Arduino.
 
 - This needs to be done everytime the ambient light changes or when you see unknown characters being received instead of the characters sent from the transmitter.
